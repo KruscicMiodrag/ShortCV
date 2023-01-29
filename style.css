@@ -10,6 +10,13 @@
 }
 
 
+.github{
+    text-align: right;
+    width: 70%;
+    margin: auto;
+}
+
+
 .landingFace{
     position: relative;
     background-color: #EF2917;
