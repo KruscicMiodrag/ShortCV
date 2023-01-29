@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+
+*{
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+
+}
+
+
+.landingFace{
+    position: relative;
+    background-color: #EF2917;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.landingText {
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    top: 50%;
+    left: 20%;
+  
+}
+
+.landingText h1 {
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    
+}
+
+
+
+
+
+.landingPic img{
+    z-index: 1;
+    position: fixed;
+    image-orientation: flip;
+    transform: scaleX(-1);
+    height: 100%;
+    right: 0%;
+    top: 0%;
+    filter: blur(2%);
+}
+
+
+
+
+.simpleQuestion {
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: #008148;
+    font-size: larger;
+    letter-spacing: 0.1em;
+}
+
+.content{
+    position: relative;
+    background-color: #008148;
+    color: rgb(43, 43, 43);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0% 10%;
+
+}
+
+.cubicals {
+    position: relative;
+    height: 20em;
+    margin: 2em 10%;
+    width: 20em;
+    justify-content: space-around;
+   
+}
+
+
+.theSwing{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    perspective: 10px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.outside, .inside{
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.inside {
+    transform: rotateY(180deg);
+    background-color: #034732;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+.outside {
+    font-size: 2em;
+    background-color: #EF8A17;
+}
+
+.outside p {
+    margin: 0.1em;
+}
+
+.cubicals:hover .theSwing {
+    transform: rotateY(180deg);
+}
+
+
+
+
+.outside i {
+    font-size: 3em;
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+}
+.outside span {
+    color: #c71100;
+}
+
+
+
+
+.komukacija .outside p{
+    margin: 0.1em 0.5em;
+ 
+}
+
+
+
+.inside p{
+    margin: 1em;
+    margin-top: 1em;
+    line-height: 1.3em;
+}
+
+.komukacija p{
+    margin-top: 2.5em;
+}
+
+.komukacija .inside p span {
+    color: #EF2917;
+    font-weight: bold;
+}
+
+.kvalifikovan .inside p {
+    line-height: 1.3em;
+}
+
+.kvalifikovan .inside p span {
+    color: #EF2917;
+    font-weight: bold;
+}
+
+
+.iskusan .inside span {
+    color: #EF2917;
+    font-weight: bold;
+}
+
+
+
+/* Generalno je losa praksa da se !imporant koristi ali mi je muka da mijenjam oko ovoga jer je mali projekat*/
+.second {
+    color: #7a7a7a !important;
+    font-weight: normal !important;
+    
+}
+
+
+.selfImprovment .inside span {
+    color: #EF2917;
+    font-weight: bold;
+}
+
+
+
+
+.theDownSides {
+    position: relative;
+    background-color: #EF2917;
+    color: white;
+}
+
+.theDownSides h2 {
+    padding: 2em;
+    text-align: center;
+    position: relative;
+
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+}
+
+.theDownSides p {
+    margin-left: 60%;
+    font-size: 1.5em;
+    margin-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+
+.holding {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    height: 100%;
+
+}
+
+
+
+#ne {
+    color: black;
+}
+
+#boje {
+    color: black;
+    animation: changeColor 3s infinite alternate-reverse;
+}
+
+
+
+
+
+
+
+
+
+@keyframes changeColor {
+    0%{
+       color: white
+    }
+    10%{
+        color: yellow;
+    }
+    20%{
+        color: blue;
+    }
+    30%{
+        color:red;
+    }
+    40%{
+        color: purple;
+    }
+    50%{
+        color: green;
+    }
+    60%{
+        color: turquoise;
+    }
+    70%{
+        color: orange;
+    }
+    80%{
+        color: pink;
+    }
+    90%{
+        color: gold;
+    }
+    100%{
+        colgroup: black;
+    }
+}
+
+
+.theBestPart{
+    position: relative;
+    background-color: #008148;
+}
+
+.theBestPart h2 {
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: #008148;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+
+.theBestPart p{
+    margin-right: 60%;
+    font-size: 1.5em;
+    margin-left: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    color: white;
+}
+
+.bestCheck  {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+
+    height: 40%;
+    text-align: center;
+
+}
+
+.bestCheck i{
+    position: relative;
+    font-size: 1500%;
+    color: white;
+
+}
+
+
+
+footer {
+    position: relative;
+    background-color: #292C2F;
+    color: white;
+    text-align: center;
+}
+
+footer h3{
+    padding: 2em;
+    padding-bottom: 1em;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 0 20%;
+    padding-bottom: 3em;
+}
+
+footer span {
+    color: #EF2917;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1280px) {
+    .content{
+        position: relative;
+        background-color: #008148;
+        color: rgb(43, 43, 43);
+        display: block;
+        padding: 0% 10%;
+        padding-bottom: 10%;
+    }
+    .cubicals{
+        width: 100%;
+        position: relative;
+        height: 20em;
+        margin:  0;
+        margin-bottom: 2em;
+        justify-content: space-around;
+    }
+
+    .holding {
+
+        left: 0%;
+
+    }
+
+
+
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .content{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .inside p, .outside p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .landingText {
+        position: absolute;
+        color: #FFF;
+        text-align: center;
+        top: 20%;
+        left: 0%;
+        width: 100%;
+    }
+
+   .holding{
+    top: 20%;
+    left: -10%;
+    animation: rocketLaunch infinite 3s alternate ;
+   }
+
+
+   @keyframes rocketLaunch{
+    0%{
+        top:0%;
+    }
+    100%{
+        top: 100%;
+    }
+   }
+
+
+    .landingPic img{
+        position: absolute;
+        width: auto;
+        left: 0%;
+        top: 30%;
+        height: 80%;
+
+    }
+
+    .theDownSides p {
+        position: relative;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        z-index: 4;
+    }
+    .theBestPart p {
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+    }
+
+    .theBestPart h2 {
+        padding-bottom: 0;
+    }
+
+    .theBestPart .bestTitle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .theBestPart .bestCheck{
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        
+        margin: auto;
+
+    }
+    .bestCheck i {
+        font-size: 4em;
+        margin-top: 0.8em;
+    }
+
+    .bestTitle h2{ 
+        padding-right: 1em;
+    }
+
+    .cubicals{
+        margin-bottom: 3em;
+    }
+
+
+
+  }
